@@ -1,0 +1,59 @@
+
+> white-decker-resume-service@1.0.0 build
+> next build
+
+   Creating an optimized production build...
+ ⚠ Compiled with warnings
+
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+./node_modules/@supabase/realtime-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./lib/supabase.ts
+./app/dashboard/page.tsx
+
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+./node_modules/@supabase/realtime-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/main/index.js
+./lib/supabase.ts
+./app/auth/callback/route.ts
+
+   Skipping linting
+   Checking validity of types...
+   Collecting page data...
+   Generating static pages (0/9)...
+   Generating static pages (2/9)
+
+   Generating static pages (4/9)
+
+   Generating static pages (6/9)
+
+ ✓ Generating static pages (9/9)
+   Finalizing page optimization...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    175 B          86.2 kB
+├ ○ /_not-found                          872 B          80.2 kB
+├ λ /api/create-checkout-session         0 B                0 B
+├ λ /api/webhook/stripe                  0 B                0 B
+├ ○ /auth                                4.36 kB         142 kB
+├ λ /auth/callback                       0 B                0 B
+├ ○ /dashboard                           8.33 kB         144 kB
+└ ○ /optimize                            24.1 kB         165 kB
++ First Load JS shared by all            79.3 kB
+  ├ chunks/864-2f5549c3155838fb.js       26.5 kB
+  ├ chunks/fd9d1056-9bc591f40a60a661.js  50.9 kB
+  ├ chunks/main-app-d21a781d012a6af1.js  220 B
+  └ chunks/webpack-8ef9cb6da3936353.js   1.74 kB
+
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+

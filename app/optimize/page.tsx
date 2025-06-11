@@ -1,12 +1,15 @@
 'use client'
 
+import React from 'react'
+import { Progress } from '@/components/ui/progress'
+
+
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
-import { Progress } from '@/components/ui/progress'
 import { FileUpload } from '@/components/upload/file-upload'
 import { useAuth } from '@/hooks/use-auth'
 import { getStripe, PRICING } from '@/lib/stripe'
@@ -162,12 +165,12 @@ export default function OptimizePage() {
                 key={step.id}
                 className={`flex items-center space-x-2 ${
                   step.id <= currentStep ? 'text-blue-600' : 'text-gray-400'
-                }`}
+                }`}	
               >
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
                   step.id <= currentStep ? 'bg-blue-600 text-white' : 'bg-gray-200'
                 }`}>
-                  <step.icon className="h-4 w-4" />
+                  {React.createElement(step.icon, { className: "h-4 w-4" })}
                 </div>
                 <span className="text-sm font-medium">{step.title}</span>
               </div>
