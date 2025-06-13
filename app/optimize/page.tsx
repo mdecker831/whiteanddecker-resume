@@ -62,6 +62,8 @@ export default function OptimizePage() {
   }
 
   const handlePayment = async () => {
+    console.log('🚀 handlePayment triggered')
+
     if (!resumeFile || !jobDescription.trim()) {
       toast.error('Please complete all previous steps')
       return

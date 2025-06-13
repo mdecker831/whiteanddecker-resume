@@ -2,8 +2,11 @@
 > white-decker-resume-service@1.0.0 build
 > next build
 
-   Creating an optimized production build...
- ⚠ Compiled with warnings
+   ▲ Next.js 15.3.3
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ⚠ Compiled with warnings in 15.0s
 
 ./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
 Critical dependency: the request of a dependency is an expression
@@ -11,49 +14,43 @@ Critical dependency: the request of a dependency is an expression
 Import trace for requested module:
 ./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
 ./node_modules/@supabase/realtime-js/dist/main/index.js
-./node_modules/@supabase/supabase-js/dist/main/index.js
-./lib/supabase.ts
-./app/dashboard/page.tsx
-
-./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
-Critical dependency: the request of a dependency is an expression
-
-Import trace for requested module:
-./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
-./node_modules/@supabase/realtime-js/dist/main/index.js
-./node_modules/@supabase/supabase-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/module/index.js
 ./lib/supabase.ts
 ./app/auth/callback/route.ts
 
+
+
+Retrying 1/3...
+
+
+Retrying 2/3...
+ ✓ Compiled successfully in 28.0s
    Skipping linting
-   Checking validity of types...
-   Collecting page data...
-   Generating static pages (0/9)...
-   Generating static pages (2/9)
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/9) ...
+   Generating static pages (2/9) 
+   Generating static pages (4/9) 
+   Generating static pages (6/9) 
+ ✓ Generating static pages (9/9)
+   Finalizing page optimization ...
+   Collecting build traces ...
 
-   Generating static pages (4/9)
-
-   Generating static pages (6/9)
-
- ✓ Generating static pages (9/9)
-   Finalizing page optimization...
-
-Route (app)                              Size     First Load JS
-┌ ○ /                                    175 B          86.2 kB
-├ ○ /_not-found                          872 B          80.2 kB
-├ λ /api/create-checkout-session         0 B                0 B
-├ λ /api/webhook/stripe                  0 B                0 B
-├ ○ /auth                                4.36 kB         142 kB
-├ λ /auth/callback                       0 B                0 B
-├ ○ /dashboard                           8.33 kB         144 kB
-└ ○ /optimize                            24.1 kB         165 kB
-+ First Load JS shared by all            79.3 kB
-  ├ chunks/864-2f5549c3155838fb.js       26.5 kB
-  ├ chunks/fd9d1056-9bc591f40a60a661.js  50.9 kB
-  ├ chunks/main-app-d21a781d012a6af1.js  220 B
-  └ chunks/webpack-8ef9cb6da3936353.js   1.74 kB
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      172 B         105 kB
+├ ○ /_not-found                            977 B         102 kB
+├ ƒ /api/create-checkout-session           141 B         101 kB
+├ ƒ /api/webhook/stripe                    141 B         101 kB
+├ ○ /auth                                4.22 kB         164 kB
+├ ƒ /auth/callback                         141 B         101 kB
+├ ○ /dashboard                           8.16 kB         162 kB
+└ ○ /optimize                            23.3 kB         182 kB
++ First Load JS shared by all             101 kB
+  ├ chunks/4bd1b696-af78c8fd4172de37.js  53.2 kB
+  ├ chunks/684-f27277b715ec74b0.js       45.9 kB
+  └ other shared chunks (total)          1.99 kB
 
 
-λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
-○  (Static)  automatically rendered as static HTML (uses no initial props)
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
 

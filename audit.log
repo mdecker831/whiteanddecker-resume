@@ -1,0 +1,43 @@
+
+up to date, audited 554 packages in 6s
+
+157 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+next  <=15.2.2-canary.7
+Severity: critical
+Next.js Server-Side Request Forgery in Server Actions - https://github.com/advisories/GHSA-fr5h-rqp8-mj6g
+Next.js Cache Poisoning - https://github.com/advisories/GHSA-gp8f-8m3g-qvj9
+Denial of Service condition in Next.js image optimization - https://github.com/advisories/GHSA-g77x-44xx-532m
+Next.js authorization bypass vulnerability - https://github.com/advisories/GHSA-7gfc-8cq8-jh5f
+Next.js Allows a Denial of Service (DoS) with Server Actions - https://github.com/advisories/GHSA-7m27-7ghc-44w9
+Authorization Bypass in Next.js Middleware - https://github.com/advisories/GHSA-f82v-jwr5-mffw
+Next.js Race Condition to Cache Poisoning - https://github.com/advisories/GHSA-qpjv-v59x-3qc4
+Information exposure in Next.js dev server due to lack of origin verification - https://github.com/advisories/GHSA-3h52-269p-cp9r
+Depends on vulnerable versions of postcss
+Depends on vulnerable versions of zod
+fix available via `npm audit fix --force`
+Will install next@13.5.11, which is outside the stated dependency range
+node_modules/next
+
+postcss  <8.4.31
+Severity: moderate
+PostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+fix available via `npm audit fix --force`
+Will install next@13.5.11, which is outside the stated dependency range
+node_modules/next/node_modules/postcss
+node_modules/postcss
+
+zod  <=3.22.2
+Severity: moderate
+Zod denial of service vulnerability - https://github.com/advisories/GHSA-m95q-7qp3-xv42
+fix available via `npm audit fix --force`
+Will install next@13.5.11, which is outside the stated dependency range
+node_modules/next/node_modules/zod
+
+3 vulnerabilities (2 moderate, 1 critical)
+
+To address all issues, run:
+  npm audit fix --force
