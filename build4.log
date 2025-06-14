@@ -1,0 +1,39 @@
+
+> white-decker-resume-service@1.0.0 build
+> next build
+
+   ▲ Next.js 15.3.3
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ⚠ Compiled with warnings in 5.0s
+
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@supabase/realtime-js/dist/main/RealtimeClient.js
+./node_modules/@supabase/realtime-js/dist/main/index.js
+./node_modules/@supabase/supabase-js/dist/module/index.js
+./lib/supabase.ts
+./app/auth/callback/route.ts
+
+ ✓ Compiled successfully in 10.0s
+   Skipping linting
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/10) ...
+ ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/optimize/success". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+    at a (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\.next\server\chunks\204.js:3:11441)
+    at d (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\.next\server\chunks\204.js:6:28828)
+    at l (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\.next\server\app\optimize\success\page.js:1:1963)
+    at nF (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:46843)
+    at nH (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:48618)
+    at nW (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:67762)
+    at nz (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:65337)
+    at nB (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:47195)
+    at nH (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:48664)
+    at nH (C:\Users\mdeck\Desktop\WD Resume\App\project-bolt-sb1-g4leonsg\project\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:64688)
+Error occurred prerendering page "/optimize/success". Read more: https://nextjs.org/docs/messages/prerender-error
+Export encountered an error on /optimize/success/page: /optimize/success, exiting the build.
+ ⨯ Next.js build worker exited with code: 1 and signal: null
