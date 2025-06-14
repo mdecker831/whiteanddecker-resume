@@ -1,10 +1,11 @@
 'use client'
 export const dynamic = 'force-dynamic'
 
+import { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-export default function SuccessPage() {
+function SuccessContent() {
   const searchParams = useSearchParams()
   const [message, setMessage] = useState('Waiting...')
 
@@ -14,4 +15,12 @@ export default function SuccessPage() {
   }, [searchParams])
 
   return <div>{message}</div>
+}
+
+export default function SuccessPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SuccessContent />
+    </Suspense>
+  )
 }

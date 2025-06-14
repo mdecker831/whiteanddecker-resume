@@ -1,5 +1,5 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone', // ✅ Enables server-side rendering
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,6 +9,4 @@ const nextConfig = {
     STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET,
     NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
   },
-};
-
-module.exports = nextConfig;
+}
