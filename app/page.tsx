@@ -175,7 +175,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Upload Resume</h3>
               <p className="text-gray-600">
-                Upload your current resume and paste the job description you're targeting.
+                Upload your current resume and paste the job description you&apos;re targeting.
               </p>
             </div>
 
@@ -269,7 +269,7 @@ export default function HomePage() {
               What Our Clients Say
             </h2>
             <p className="text-xl text-gray-600">
-              Join thousands of professionals who've accelerated their careers
+              Join thousands of professionals who&apos;ve accelerated their careers
             </p>
           </div>
 
@@ -282,7 +282,7 @@ export default function HomePage() {
                       <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-700 mb-4">"{testimonial.content}"</p>
+                  <p className="text-gray-700 mb-4">&quot; {testimonial.content}&quot; </p>
                   <div>
                     <div className="font-semibold text-gray-900">{testimonial.name}</div>
                     <div className="text-sm text-gray-600">
@@ -303,7 +303,7 @@ export default function HomePage() {
             Ready to Transform Your Career?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of professionals who've successfully landed their dream jobs 
+            Join thousands of professionals who&apos;ve successfully landed their dream jobs 
             with our AI-optimized resumes.
           </p>
           <Link href="/auth">

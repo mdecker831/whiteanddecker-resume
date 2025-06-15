@@ -204,7 +204,7 @@ export default function OptimizePage() {
               <CardContent className="space-y-4">
                 <div>
                   <Label htmlFor="job-description">
-                    Paste the job description you're applying for
+                    Paste the job description you&apos;re applying for
                   </Label>
                   <Textarea
                     id="job-description"
@@ -259,7 +259,7 @@ export default function OptimizePage() {
                 </div>
 
                 <div className="space-y-3">
-                  <h4 className="font-semibold">What you'll receive:</h4>
+                  <h4 className="font-semibold">What you&apos;ll receive:</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
